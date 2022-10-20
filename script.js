@@ -1,1 +1,82 @@
-var _0xba5e=["\x71\x35\x67\x34\x33\x76","\x6F\x66\x66\x6C\x69\x6E\x65\x42\x61\x64\x67\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x6F\x6E\x6C\x69\x6E\x65\x42\x61\x64\x67\x65","\x6F\x6E\x6C\x69\x6E\x65\x50\x6C\x61\x79\x65\x72\x73","\x73\x65\x72\x76\x65\x72\x4E\x61\x6D\x65","\x64\x69\x72\x65\x63\x74\x43\x6F\x6E\x6E\x65\x63\x74","\x6F\x6E\x63\x6C\x69\x63\x6B","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x66\x69\x76\x65\x6D\x3A\x2F\x2F\x63\x6F\x6E\x6E\x65\x63\x74\x2F","","\x4E\x6F\x74\x69\x66\x69\x63\x61\x74\x69\x6F\x6E","\x70\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E","\x67\x72\x61\x6E\x74\x65\x64","\x64\x65\x6E\x69\x65\x64","\x72\x65\x71\x75\x65\x73\x74\x50\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x65\x72\x76\x65\x72\x73\x2D\x66\x72\x6F\x6E\x74\x65\x6E\x64\x2E\x66\x69\x76\x65\x6D\x2E\x6E\x65\x74\x2F\x61\x70\x69\x2F\x73\x65\x72\x76\x65\x72\x73\x2F\x73\x69\x6E\x67\x6C\x65\x2F","\x65\x72\x72\x6F\x72","\x68\x69\x64\x65","\x73\x68\x6F\x77","\x55\x6E\x6B\x6E\x6F\x77\x6E","\x74\x65\x78\x74","\x74\x69\x74\x6C\x65","\x64\x6F\x63\x75\x6D\x65\x6E\x74","\x28\x57\x41\x52\x4E\x49\x4E\x47\x29\x20\x53\x65\x72\x76\x65\x72\x20\x4F\x66\x66\x6C\x69\x6E\x65","\x53\x65\x72\x76\x65\x72\x20\x6F\x66\x66\x6C\x69\x6E\x65\x20\x21","\x74\x68\x65\x6E","\x63\x6C\x69\x65\x6E\x74\x73","\x44\x61\x74\x61","\x68\x6F\x73\x74\x6E\x61\x6D\x65","\x73\x76\x5F\x6D\x61\x78\x63\x6C\x69\x65\x6E\x74\x73","\x28","\x2F","\x29\x20\x53\x65\x72\x76\x65\x72\x20\x53\x74\x61\x74\x75\x73","\x72\x65\x70\x6C\x61\x63\x65","\x6A\x73\x6F\x6E"];const serverCode=_0xba5e[0];const offlineObj=document[_0xba5e[2]](_0xba5e[1]);const onlineObj=document[_0xba5e[2]](_0xba5e[3]);const playersObj=document[_0xba5e[2]](_0xba5e[4]);const serverNameObj=document[_0xba5e[2]](_0xba5e[5]);const directConnectObj=document[_0xba5e[2]](_0xba5e[6]);directConnectObj[_0xba5e[7]]= ()=>{window[_0xba5e[8]]= `${_0xba5e[9]}${serverCode}${_0xba5e[10]}`};let hasBeenOnline=false,hasNotifiactionSent=false;if((_0xba5e[11] in  window)&& Notification[_0xba5e[12]]!== _0xba5e[13]&& Notification[_0xba5e[12]]!== _0xba5e[14]){Notification[_0xba5e[15]]()};function updateServerStatus(){let _0x489axa=`${_0xba5e[16]}${serverCode}${_0xba5e[10]}`;fetch(_0x489axa)[_0xba5e[26]]((_0x489ax11)=>{return _0x489ax11[_0xba5e[35]]()})[_0xba5e[26]]((_0x489axb)=>{if(_0x489axb[_0xba5e[17]]){$(onlineObj)[_0xba5e[18]]();$(offlineObj)[_0xba5e[19]]();$(directConnectObj)[_0xba5e[18]]();$(playersObj)[_0xba5e[21]](_0xba5e[20]);top[_0xba5e[23]][_0xba5e[22]]= `${_0xba5e[24]}`;if(hasBeenOnline&&  !hasNotifiactionSent){hasNotifiactionSent= true;if(_0xba5e[11] in  window){if(Notification[_0xba5e[12]]=== _0xba5e[13]){let _0x489axc= new Notification(_0xba5e[25])}else {if(Notification[_0xba5e[12]]!== _0xba5e[14]){Notification[_0xba5e[15]]()[_0xba5e[26]](function(_0x489axd){if(_0x489axd=== _0xba5e[13]){let _0x489axc= new Notification(_0xba5e[25])}})}}}}}else {hasBeenOnline= true;hasNotifiactionSent= false;let _0x489axe=_0x489axb[_0xba5e[28]][_0xba5e[27]];let _0x489axf=_0x489axb[_0xba5e[28]][_0xba5e[29]];let _0x489ax10=_0x489axb[_0xba5e[28]][_0xba5e[30]];top[_0xba5e[23]][_0xba5e[22]]= `${_0xba5e[31]}${_0x489axe}${_0xba5e[32]}${_0x489ax10}${_0xba5e[33]}`;$(offlineObj)[_0xba5e[18]]();$(onlineObj)[_0xba5e[19]]();$(directConnectObj)[_0xba5e[19]]();$(playersObj)[_0xba5e[21]](`${_0xba5e[10]}${_0x489axe}${_0xba5e[32]}${_0x489ax10}${_0xba5e[10]}`);_0x489axf= _0x489axf[_0xba5e[34]](/\^[1-9]/g,_0xba5e[10]);$(serverNameObj)[_0xba5e[21]](_0x489axf)}})}setTimeout(()=>{updateServerStatus();setInterval(updateServerStatus,5000)},500)
+
+// Made by plesalex100 for Underground Romania
+// Foloseste acest cod fara probleme pentru server-ul tau !
+// Si ajuta si tu la randul tau pe oricine din comunitatea de FiveM
+
+
+// de unde se ia acest cod: https://i.imgur.com/fc2wxX3.png
+const serverCode = "x9ro8e";
+
+
+const offlineObj = document.getElementById("offlineBadge");
+const onlineObj = document.getElementById("onlineBadge");
+const playersObj = document.getElementById("onlinePlayers");
+const serverNameObj = document.getElementById("serverName");
+const directConnectObj = document.getElementById("directConnect");
+
+directConnectObj.onclick = () => {
+	window.location = `fivem://connect/${serverCode}`;
+}
+
+let hasBeenOnline = false, hasNotifiactionSent = false;
+
+if(("Notification" in window) && Notification.permission !== "granted" && Notification.permission !== "denied") {
+	Notification.requestPermission();
+}
+
+function updateServerStatus() {
+	let apiLink = `https://servers-frontend.fivem.net/api/servers/single/${serverCode}`;
+
+	fetch(apiLink).then(response => response.json()).then(data => {
+
+		if(data.error) {
+			$(onlineObj).hide();
+			$(offlineObj).show();
+			$(directConnectObj).hide();
+			$(playersObj).text("Unknown");
+			
+			top.document.title = `(WARNING) Server Offline`;
+			if(hasBeenOnline && !hasNotifiactionSent) {
+				hasNotifiactionSent = true;
+				if ("Notification" in window) {
+					if (Notification.permission === "granted") {
+						let notification = new Notification("Server offline !");
+					}
+					else if (Notification.permission !== "denied") {
+						Notification.requestPermission().then(function(permission) {
+							if (permission === "granted") {
+								let notification = new Notification("Server offline !");
+							}
+						});
+					}
+				}
+			}
+		} else {
+			
+			hasBeenOnline = true;
+			hasNotifiactionSent = false;
+
+			let playersOn = data.Data.clients;
+			let serverName = data.Data.hostname;
+			let slots = data.Data.sv_maxclients;
+			
+			top.document.title = `(${playersOn}/${slots}) Server Status`;
+			$(offlineObj).hide();
+			$(onlineObj).show();
+			$(directConnectObj).show();
+			$(playersObj).text(`${playersOn}/${slots}`);
+
+			// todo: use fivem colors syntax.
+			// deocamdata le scoate direct pur si simplu din titlu
+			serverName = serverName.replace(/\^[1-9]/g, '');
+
+			$(serverNameObj).text(serverName);
+		}
+
+	});
+}
+
+setTimeout(() => {
+	updateServerStatus();
+	setInterval(updateServerStatus, 5000);
+}, 500);
